@@ -1,0 +1,50 @@
+SentiWS
+~~~~~~~
+
+SentimentWortschatz, or SentiWS for short, is a publicly available German-language resource for sentiment analysis, opinion mining etc. It lists positive and negative sentiment bearing words weighted within the interval of [-1; 1] plus their part of speech tag, and if applicable, their inflections. The current version of SentiWS (v1.8b) contains 1,650 negative and 1,818 positive words, which sum up to 16,406 positive and 16,328 negative word forms, respectively. It not only contains adjectives and adverbs explicitly expressing a sentiment, but also nouns and verbs implicitly containing one.
+
+
+License
+~~~~~~~
+
+SentiWS is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License (http://creativecommons.org/licenses/by-nc-sa/3.0/).
+
+
+Obtain a Copy
+~~~~~~~~~~~~~
+The latest version of SentiWS can be found at http://wortschatz.informatik.uni-leipzig.de/download/.
+
+
+Data Format
+~~~~~~~~~~~
+SentiWS is organised in two utf8-encoded text files structured the following way:
+
+<Word>|<POS tag> \t <Polarity weight> \t <Infl_1>,...,<Infl_k> \n
+
+where \t denotes a tab, and \n denotes a new line.
+
+
+Citation
+~~~~~~~~
+
+If you use SentiWS in your work we kindly ask you to cite
+
+R. Remus, U. Quasthoff & G. Heyer: SentiWS - a Publicly Available German-language Resource for Sentiment Analysis.
+In: Proceedings of the 7th International Language Ressources and Evaluation (LREC'10), 2010
+
+or use the following BibTeX-code snippet:
+
+@INPROCEEDINGS{remquahey2010,
+title = {SentiWS -- a Publicly Available German-language Resource for Sentiment Analysis},
+booktitle = {Proceedings of the 7th International Language Resources and Evaluation (LREC'10)},
+author = {Remus, R. and Quasthoff, U. and Heyer, G.},
+year = {2010}
+}
+
+
+Version History
+~~~~~~~~~~~~~~~
+
+SentiWS is "work in progress" and hence far from being fully-fledged and error-free. It will be continuously refined by adding missing words and word forms and removing ambiguous ones.
+
+v1.8b, 2010-05-19: First publicly available version.
